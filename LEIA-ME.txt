@@ -1,0 +1,34 @@
+KANTROL — LANDING PAGE
+======================
+
+Site estático (HTML + CSS + JS puro). Não precisa de Node, PHP ou banco de dados.
+
+ESTRUTURA
+  index.html                  página principal
+  assets/css/tokens.css       cores, espaçamentos, fontes (igual ao Design System)
+  assets/css/components.css   botões, cards, campos, conversa do robô
+  assets/css/site.css         layout das seções e responsivo
+  assets/js/main.js           menu mobile, cabeçalho e formulário → WhatsApp
+  assets/img/                 logo (original, transparente, branco), favicon e fundos
+  assets/img/equipe/          coloque aqui as fotos da equipe
+
+ANTES DE PUBLICAR
+  1. Abra assets/js/main.js e troque no topo:
+       whatsapp       → número real com DDI e DDD, só dígitos (ex.: 5511987654321)
+       whatsappTexto  → como o número aparece na página (ex.: (11) 98765-4321)
+       email          → e-mail real de contato
+  2. Fotos da equipe (proporção 4:5, ex.: 800×1000 px, JPG):
+       assets/img/equipe/kauan.jpg
+       assets/img/equipe/guilherme.jpg
+     Enquanto a foto não existir, aparece o quadro com as iniciais.
+  3. Se usar domínio próprio, troque a og:image no <head> do index.html por uma URL completa
+     (ex.: https://kantrol.com.br/assets/img/kantrol-logo.png).
+
+COMO SUBIR NO SERVIDOR
+  - Hospedagem comum (cPanel/FTP): envie TODO o conteúdo desta pasta para public_html/.
+  - Nginx/Apache: aponte a raiz do site para esta pasta.
+  - Vercel / Netlify / Cloudflare Pages / GitHub Pages: suba a pasta como projeto estático,
+    sem comando de build.
+  - Ative HTTPS (Let's Encrypt) no painel da hospedagem.
+
+Fontes carregadas do Google Fonts: Source Serif 4 (títulos), Outfit (texto), IBM Plex Mono (rótulos).

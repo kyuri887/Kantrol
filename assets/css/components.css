@@ -1,0 +1,153 @@
+/* Kantrol — componentes (o mesmo arquivo é o bundle.css do Design System) */
+
+/* ---------- Botão ---------- */
+.k-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);
+  min-height: 48px; padding: 0 var(--space-6);
+  font: 600 16px/1 var(--font-sans); text-decoration: none;
+  border: 1.5px solid transparent; border-radius: var(--radius-md);
+  cursor: pointer; transition: background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease;
+  white-space: nowrap;
+}
+.k-btn svg { width: 18px; height: 18px; flex: none; }
+.k-btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+.k-btn-primary { background: var(--primary); color: var(--on-primary); }
+.k-btn-primary:hover { background: var(--primary-hover); }
+.k-btn-secondary { background: transparent; color: var(--ink); border-color: var(--line); }
+.k-btn-secondary:hover { border-color: var(--ink); }
+.k-btn-link { background: transparent; color: var(--ink); padding: 0 var(--space-2); border-bottom-color: transparent; border-radius: 0; }
+.k-btn-link:hover { text-decoration: underline; text-underline-offset: 6px; text-decoration-thickness: 1px; }
+.k-btn-ghost { background: transparent; color: var(--accent); padding: 0 var(--space-2); min-height: 40px; }
+.k-btn-ghost:hover { text-decoration: underline; text-underline-offset: 4px; }
+.k-btn-sm { min-height: 40px; padding: 0 var(--space-4); font-size: 15px; }
+.k-btn:active { transform: translateY(1px); }
+
+/* ---------- Sobretítulo (eyebrow) ---------- */
+.k-eyebrow {
+  display: inline-flex; align-items: center; gap: var(--space-3);
+  font: 600 13px/16px var(--font-sans); letter-spacing: 0.18em; text-transform: uppercase;
+  color: var(--accent); margin: 0;
+}
+.k-eyebrow::before { content: ""; width: 28px; height: 1.5px; background: currentColor; }
+
+/* ---------- Cabeçalho de seção ---------- */
+.k-section-head { display: grid; gap: var(--space-4); max-width: 46rem; }
+.k-section-head h2 {
+  margin: 0; font: 400 clamp(32px, 4vw, 46px)/1.15 var(--font-display);
+  color: var(--ink); text-wrap: balance; letter-spacing: -0.015em;
+}
+.k-section-head p:not(.k-eyebrow) { margin: 0; font: 400 18px/1.6 var(--font-sans); color: var(--ink-muted); max-width: 40rem; }
+
+/* ---------- Card de serviço ---------- */
+.k-service {
+  display: grid; grid-template-rows: auto auto 1fr auto; gap: var(--space-4); align-content: start;
+  padding: var(--space-8) 0 0; background: transparent;
+  border-top: 1px solid var(--ink);
+  min-width: 0;
+}
+.k-service-icon {
+  width: 32px; height: 32px; display: grid; place-items: center;
+  color: var(--accent);
+}
+.k-service-icon svg { width: 30px; height: 30px; stroke-width: 1.4; }
+.k-service h3 { margin: 0; font: 500 24px/1.25 var(--font-display); color: var(--ink); }
+.k-service p { margin: 0; font: 400 16px/1.6 var(--font-sans); color: var(--ink-muted); }
+.k-service ul { margin: 0; padding: var(--space-4) 0 0; list-style: none; display: grid; gap: var(--space-2); border-top: 1px solid var(--line); }
+.k-service li { position: relative; padding-left: 22px; font: 500 15px/1.5 var(--font-sans); color: var(--ink); }
+.k-service li::before {
+  content: ""; position: absolute; left: 0; top: 0.55em; width: 10px; height: 6px;
+  border-left: 2px solid var(--accent); border-bottom: 2px solid var(--accent); transform: rotate(-45deg);
+}
+
+/* ---------- Etiqueta de canal ---------- */
+.k-chip {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  min-height: 34px; padding: 0 var(--space-4);
+  font: 500 14px/1 var(--font-sans); color: var(--ink);
+  background: var(--surface-raised); border: 1px solid var(--line); border-radius: var(--radius-sm);
+}
+.k-chip-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--aqua); flex: none; }
+
+/* ---------- Conversa (mock de robô) ---------- */
+.k-chat {
+  display: grid; gap: var(--space-3); padding: var(--space-6);
+  background: var(--surface-raised); border: 1px solid var(--line); border-radius: var(--radius-lg); max-width: 420px; width: 100%;
+}
+.k-chat-head { display: flex; align-items: center; gap: var(--space-3); padding-bottom: var(--space-3); border-bottom: 1px solid var(--line); }
+.k-chat-avatar {
+  width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; flex: none;
+  background: var(--aqua); color: var(--navy); font: 700 16px/1 var(--font-display);
+}
+.k-chat-name { font: 600 15px/1.2 var(--font-sans); color: var(--ink); }
+.k-chat-status { font: 400 13px/1.3 var(--font-sans); color: var(--ink-muted); display: flex; align-items: center; gap: 6px; }
+.k-chat-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--aqua); }
+.k-bubble {
+  max-width: 88%; padding: 10px 14px; border-radius: 8px;
+  font: 400 15px/1.45 var(--font-sans); overflow-wrap: anywhere;
+}
+.k-bubble-in { justify-self: start; background: var(--surface-alt); color: var(--ink); border-bottom-left-radius: 4px; }
+.k-bubble-out { justify-self: end; background: var(--azul); color: #ffffff; border-bottom-right-radius: 4px; }
+[data-theme="dark"] .k-bubble-out { background: var(--aqua); color: var(--navy); }
+.k-bubble-time { display: block; margin-top: 4px; font: 400 11px/1 var(--font-mono); opacity: .75; text-align: right; }
+.k-quick { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+.k-quick span {
+  font: 500 13px/1 var(--font-sans); padding: 8px 12px; border-radius: var(--radius-sm);
+  border: 1px solid var(--accent); color: var(--accent);
+}
+
+/* ---------- Princípio SOLID ---------- */
+.k-principle {
+  display: grid; grid-template-columns: 64px 1fr; gap: var(--space-4) var(--space-6); align-items: start;
+  padding: var(--space-6) 0; border-top: 1px solid var(--line);
+}
+.k-principle-letter { font: 400 56px/0.9 var(--font-display); color: var(--accent); }
+.k-principle-name { margin: 0 0 4px; font: 600 20px/1.3 var(--font-sans); color: var(--ink); }
+.k-principle-term { display: block; margin-bottom: 6px; font: 500 14px/1.4 var(--font-sans); color: var(--ink-muted); }
+.k-principle p { margin: 0; font: 400 16px/1.6 var(--font-sans); color: var(--ink-muted); }
+
+/* ---------- Membro da equipe (com espaço para foto) ---------- */
+.k-member {
+  display: grid; gap: var(--space-6); padding: var(--space-6) 0 0;
+  border-top: 1px solid var(--ink); min-width: 0;
+}
+.k-photo {
+  position: relative; aspect-ratio: 4 / 5; max-width: 100%; overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--azul);
+  display: grid; place-items: center;
+}
+.k-photo-initials { font: 400 72px/1 var(--font-display); color: var(--nevoa); opacity: .9; }
+.k-photo-hint {
+  position: absolute; left: 50%; bottom: var(--space-4); transform: translateX(-50%);
+  font: 500 12px/1 var(--font-mono); color: var(--nevoa); opacity: .8; white-space: nowrap;
+  padding: 6px 10px; border: 1px dashed rgba(230, 236, 242, .5); border-radius: var(--radius-sm);
+}
+.k-photo img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.k-member-name { margin: 0; font: 500 26px/1.2 var(--font-display); color: var(--ink); }
+.k-member-role { margin: 4px 0 0; font: 500 15px/1.4 var(--font-sans); color: var(--accent); }
+.k-member-bio { margin: var(--space-3) 0 0; font: 400 16px/1.6 var(--font-sans); color: var(--ink-muted); }
+.k-member-edu {
+  display: flex; flex-direction: column; gap: 4px; margin: var(--space-4) 0 0; padding-top: var(--space-4);
+  border-top: 1px solid var(--line); font: 400 15px/1.5 var(--font-sans); color: var(--ink);
+}
+.k-member-edu b { font-weight: 600; font-size: 14px; color: var(--ink-muted); }
+
+/* ---------- Campo de formulário ---------- */
+.k-field { display: grid; gap: var(--space-2); min-width: 0; }
+.k-field label { font: 500 14px/1.3 var(--font-sans); color: var(--ink); }
+.k-field input, .k-field select, .k-field textarea {
+  width: 100%; min-height: 48px; padding: 12px 14px; box-sizing: border-box;
+  font: 400 16px/1.4 var(--font-sans); color: var(--ink);
+  background: var(--surface-raised); border: 1px solid var(--line); border-radius: var(--radius-md);
+  transition: border-color .15s ease;
+}
+.k-field textarea { min-height: 120px; resize: vertical; }
+.k-field input::placeholder, .k-field textarea::placeholder { color: var(--ink-muted); opacity: .8; }
+.k-field input:hover, .k-field select:hover, .k-field textarea:hover { border-color: var(--ink); }
+.k-field input:focus-visible, .k-field select:focus-visible, .k-field textarea:focus-visible { outline: 3px solid var(--focus); outline-offset: 1px; border-color: var(--focus); }
+.k-field-error { font: 400 13px/1.3 var(--font-sans); color: var(--danger); }
+.k-field[data-invalid] input, .k-field[data-invalid] select, .k-field[data-invalid] textarea { border-color: var(--danger); }
+
+@media (prefers-reduced-motion: reduce) {
+  .k-btn, .k-field input, .k-field select, .k-field textarea { transition: none; }
+}

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kantrol — Desenvolvimento &amp; Automação</title>
+<meta name="description" content="A Kantrol cria sites, portais, hubs corporativos e robôs de atendimento para WhatsApp, Telegram e Instagram, com arquitetura SOLID, design system e segurança.">
+<meta name="theme-color" content="#0b1b33">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kantrol — Desenvolvimento & Automação">
+<meta property="og:description" content="Sites, portais, automação de processos e robôs de atendimento para WhatsApp, Telegram e Instagram.">
+<meta property="og:image" content="assets/img/kantrol-logo.png">
+<link rel="icon" type="image/png" href="assets/img/kantrol-k.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ CABEÇALHO ============ -->
+<header class="site-header" id="topo" data-theme="dark">
+  <div class="header-inner">
+    <a class="brand" href="#topo" aria-label="Kantrol — início">
+      <img src="assets/img/kantrol-logo-branco.png" alt="Kantrol — Development &amp; Automation" width="904" height="270">
+    </a>
+    <button class="menu-toggle" type="button" id="menu-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav" id="menu" aria-label="Principal" data-theme="dark">
+    <a href="#servicos">Serviços</a>
+    <a href="#robos">Robôs de atendimento</a>
+    <a href="#arquitetura">Arquitetura</a>
+    <a href="#processo">Como trabalhamos</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+<!-- ============ HERO ============ -->
+<section class="hero" data-theme="dark" aria-labelledby="hero-title">
+  <div class="hero-inner">
+    <h1 id="hero-title">Sua empresa movida a inovação.</h1>
+  </div>
+</section>
+
+<!-- ============ SERVIÇOS ============ -->
+<section class="section section-alt" id="servicos" aria-labelledby="servicos-title">
+  <div class="container">
+    <div class="k-section-head">
+      <h2 id="servicos-title">Quatro frentes, uma mesma engenharia por trás.</h2>
+      <p>Cada entrega da Kantrol é pensada para crescer com a sua empresa: código organizado, componentes reaproveitáveis e infraestrutura que aguenta mais usuários sem reescrever tudo.</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="k-service">
+        <div class="k-service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01M10 6.5h.01M7 13h6M7 16h10"/></svg>
+        </div>
+        <h3>Sites e landing pages</h3>
+        <p>Sites institucionais e páginas de conversão sob medida, rápidos no celular e preparados para aparecer no Google.</p>
+        <ul>
+          <li>Layout próprio a partir do seu design system</li>
+          <li>SEO técnico e alto desempenho</li>
+          <li>Domínio, hospedagem e HTTPS configurados</li>
+        </ul>
+      </article>
+
+      <article class="k-service">
+        <div class="k-service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="6" height="6" rx="1.5"/><rect x="15" y="15" width="6" height="6" rx="1.5"/><path d="M9 6h4a3 3 0 0 1 3 3v6"/><path d="m13.5 12.5 2.5 2.5 2.5-2.5"/></svg>
+        </div>
+        <h3>Automação de processos</h3>
+        <p>Tiramos tarefas repetitivas das mãos da sua equipe: cadastros, planilhas, e-mails, relatórios e integrações entre sistemas.</p>
+        <ul>
+          <li>Integrações via API entre os sistemas que você já usa</li>
+          <li>Relatórios e alertas gerados automaticamente</li>
+          <li>Fluxos de aprovação com histórico</li>
+        </ul>
+      </article>
+
+      <article class="k-service">
+        <div class="k-service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="4.5" cy="5" r="2"/><circle cx="19.5" cy="5" r="2"/><circle cx="4.5" cy="19" r="2"/><circle cx="19.5" cy="19" r="2"/><path d="m6 6.4 3.8 3.6M18 6.4l-3.8 3.6M6 17.6l3.8-3.6M18 17.6l-3.8-3.6"/></svg>
+        </div>
+        <h3>Hubs e portais corporativos</h3>
+        <p>Portais do cliente, intranets e hubs que reúnem sistemas, documentos e indicadores em um só lugar, com acesso por perfil.</p>
+        <ul>
+          <li>Login seguro e permissões por perfil de usuário</li>
+          <li>Painéis com os indicadores do seu negócio</li>
+          <li>Integração com ERP, CRM e planilhas</li>
+        </ul>
+      </article>
+
+      <article class="k-service">
+        <div class="k-service-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="8" width="14" height="11" rx="3"/><path d="M12 4v4M9.5 13h.01M14.5 13h.01M9.5 16h5M2.5 12.5v2M21.5 12.5v2"/></svg>
+        </div>
+        <h3>Robôs de atendimento</h3>
+        <p>Bots para WhatsApp, Telegram e Instagram que respondem, qualificam e encaminham clientes a qualquer hora do dia.</p>
+        <ul>
+          <li>Respostas com IA treinada no seu negócio</li>
+          <li>Transferência para um atendente humano</li>
+          <li>Conexão com CRM, agenda e sistema de pedidos</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROBÔS ============ -->
+<section class="section bots" id="robos" data-theme="dark" aria-labelledby="robos-title">
+  <div class="container">
+    <div class="bots-head">
+      <h2 id="robos-title">Atendimento automático onde o seu cliente já está.</h2>
+      <p>Um único robô, conectado aos seus sistemas, conversa com os seus clientes no WhatsApp, no Telegram e no Instagram, sempre com o tom da sua marca.</p>
+    </div>
+
+    <div class="bots-main">
+      <div class="bots-demo">
+        <div class="k-chat" role="img" aria-label="Exemplo de conversa: cliente pergunta o status do pedido e o robô responde com a previsão de entrega e opções de atendimento.">
+        <div class="k-chat-head">
+          <div class="k-chat-avatar">K</div>
+          <div>
+            <div class="k-chat-name">Atendimento · Loja Exemplo</div>
+            <div class="k-chat-status">robô online agora</div>
+          </div>
+        </div>
+        <div class="k-bubble k-bubble-in">Oi! Qual o status do meu pedido 4821?<span class="k-bubble-time">21:47</span></div>
+        <div class="k-bubble k-bubble-out">Olá, Marina! O pedido 4821 saiu para entrega hoje às 9h12 e chega até as 18h. Quer receber o código de rastreio?<span class="k-bubble-time">21:47</span></div>
+        <div class="k-quick">
+          <span>Sim, enviar rastreio</span><span>2ª via do boleto</span><span>Falar com atendente</span>
+        </div>
+      </div>
+      <p class="visual-caption">Exemplo ilustrativo de robô conectado ao sistema de pedidos</p>
+      </div>
+      <ol class="flow" aria-label="Como uma mensagem é atendida">
+        <li><h3>O cliente envia uma mensagem</h3><p>Pelo WhatsApp, Telegram ou Instagram, do jeito que ele escreve normalmente.</p></li>
+        <li><h3>O robô entende a intenção</h3><p>A IA identifica o pedido: dúvida, compra, agendamento, suporte ou reclamação.</p></li>
+        <li><h3>Consulta os seus sistemas</h3><p>Busca pedidos, horários, boletos ou cadastros com acesso seguro e registro de cada consulta.</p></li>
+        <li><h3>Resolve ou encaminha</h3><p>Responde na hora ou transfere para o atendente certo, que já recebe o contexto da conversa.</p></li>
+      </ol>
+    </div>
+
+    <ul class="feature-list">
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Responde na hora, de dia ou de madrugada, inclusive fins de semana.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/><path d="m16 16 2 2 4-4"/></svg><span>Entende texto livre com inteligência artificial, sem obrigar o cliente a digitar números de menu.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg><span>Agenda horários, emite 2ª via e consulta pedidos direto no seu sistema.</span></li>
+      <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="m17 10 4 4-4 4"/></svg><span>Passa a conversa para uma pessoa da sua equipe com todo o histórico.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ ARQUITETURA ============ -->
+<section class="section" id="arquitetura" aria-labelledby="arq-title">
+  <div class="container">
+    <div class="k-section-head">
+      <h2 id="arq-title">Software feito para crescer sem virar um problema.</h2>
+      <p>Sistema mal estruturado sai barato no começo e caro em cada mudança. Por isso todo projeto da Kantrol segue os cinco princípios SOLID da engenharia de software.</p>
+    </div>
+
+    <div class="arch-grid">
+      <ol class="solid-list">
+        <li class="k-principle">
+          <span class="k-principle-letter" aria-hidden="true">S</span>
+          <div><span class="k-principle-term">Single Responsibility</span><h3 class="k-principle-name">Responsabilidade única</h3><p>Cada módulo cuida de uma coisa só. Uma mudança no cálculo de frete não quebra o login.</p></div>
+        </li>
+        <li class="k-principle">
+          <span class="k-principle-letter" aria-hidden="true">O</span>
+          <div><span class="k-principle-term">Open / Closed</span><h3 class="k-principle-name">Aberto para extensão</h3><p>Novas funções entram sem reescrever o que já funciona e já foi testado.</p></div>
+        </li>
+        <li class="k-principle">
+          <span class="k-principle-letter" aria-hidden="true">L</span>
+          <div><span class="k-principle-term">Liskov Substitution</span><h3 class="k-principle-name">Peças substituíveis</h3><p>Trocar um meio de pagamento ou um canal de mensagem não exige refazer o sistema.</p></div>
+        </li>
+        <li class="k-principle">
+          <span class="k-principle-letter" aria-hidden="true">I</span>
+          <div><span class="k-principle-term">Interface Segregation</span><h3 class="k-principle-name">Interfaces enxutas</h3><p>Cada parte do sistema depende apenas do que realmente usa, nada além.</p></div>
+        </li>
+        <li class="k-principle">
+          <span class="k-principle-letter" aria-hidden="true">D</span>
+          <div><span class="k-principle-term">Dependency Inversion</span><h3 class="k-principle-name">Regras de negócio independentes</h3><p>Suas regras não ficam presas a um banco de dados, framework ou fornecedor específico.</p></div>
+        </li>
+      </ol>
+
+      <div class="pillars">
+        <div class="pillar">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>Segurança</h3>
+          <p>HTTPS, controle de acesso por perfil, dados sensíveis criptografados, backups e adequação à LGPD.</p>
+        </div>
+        <div class="pillar">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="3.5"/></svg>Design system</h3>
+          <p>Cores, tipografia e componentes documentados. Telas novas saem consistentes e mais rápido.</p>
+        </div>
+        <div class="pillar">
+          <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17 9 11l4 4 8-8"/><path d="M15 7h6v6"/></svg>Escalabilidade</h3>
+          <p>Infraestrutura em nuvem e monitoramento para acompanhar o crescimento de acessos e de dados.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESSO ============ -->
+<section class="section section-alt" id="processo" aria-labelledby="proc-title">
+  <div class="container">
+    <div class="k-section-head">
+      <h2 id="proc-title">Do primeiro contato ao sistema no ar.</h2>
+    </div>
+    <ol class="steps">
+      <li><h3>Diagnóstico</h3><p>Entendemos o seu processo, os sistemas que você usa e onde está o maior ganho.</p></li>
+      <li><h3>Arquitetura e design</h3><p>Desenhamos a estrutura técnica, as telas e o design system antes de programar.</p></li>
+      <li><h3>Desenvolvimento em ciclos</h3><p>Entregas curtas que você acompanha e valida, sem surpresa no fim do projeto.</p></li>
+      <li><h3>Entrega e evolução</h3><p>Publicação, treinamento da equipe e suporte para as próximas melhorias.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ EQUIPE ============ -->
+<section class="section" id="equipe" aria-labelledby="equipe-title">
+  <div class="container">
+    <div class="k-section-head">
+      <h2 id="equipe-title">Você fala direto com quem escreve o código.</h2>
+      <p>Na Kantrol não há intermediários entre o seu projeto e os desenvolvedores.</p>
+    </div>
+
+    <div class="team-grid">
+      <article class="k-member">
+        <!-- FOTO: salve a foto como assets/img/equipe/kauan.jpg (proporção 4:5, ex.: 800×1000 px) -->
+        <div class="k-photo">
+          <span class="k-photo-initials" aria-hidden="true">KI</span>
+          <span class="k-photo-hint">foto 4:5</span>
+          <img src="assets/img/equipe/kauan.jpg" alt="Foto de Kauan Iury" loading="lazy" onerror="this.remove()">
+        </div>
+        <div>
+          <h3 class="k-member-name">Kauan Iury</h3>
+          <p class="k-member-role">Desenvolvimento de sistemas</p>
+          <p class="k-member-bio">Arquitetura de software, sites, portais corporativos e integrações entre sistemas.</p>
+          <p class="k-member-edu"><b>Formação</b><span>Análise e Desenvolvimento de Sistemas · Uninove</span></p>
+        </div>
+      </article>
+
+      <article class="k-member">
+        <!-- FOTO: salve a foto como assets/img/equipe/guilherme.jpg (proporção 4:5, ex.: 800×1000 px) -->
+        <div class="k-photo">
+          <span class="k-photo-initials" aria-hidden="true">GR</span>
+          <span class="k-photo-hint">foto 4:5</span>
+          <img src="assets/img/equipe/guilherme.jpg" alt="Foto de Guilherme Richetto" loading="lazy" onerror="this.remove()">
+        </div>
+        <div>
+          <h3 class="k-member-name">Guilherme Richetto</h3>
+          <p class="k-member-role">Inteligência artificial</p>
+          <p class="k-member-bio">Robôs de atendimento, IA aplicada ao negócio e automação de processos.</p>
+          <p class="k-member-edu"><b>Formação</b><span>Inteligência Artificial · FIAP</span></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTATO ============ -->
+<section class="section contact" id="contato" data-theme="dark" aria-labelledby="contato-title">
+  <div class="container contact-grid">
+    <div>
+      <div class="k-section-head">
+        <h2 id="contato-title">Conte o que você precisa automatizar.</h2>
+        <p>Preencha o formulário e a mensagem chega pronta no nosso WhatsApp. Respondemos com os próximos passos e uma estimativa inicial.</p>
+      </div>
+      <dl class="contact-info">
+        <div><dt>WhatsApp</dt><dd><a href="#" data-whatsapp-link data-whatsapp-display>(11) 95443-2047</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="#" data-email-link data-email-display>operacoes@kantrol.com.br</a></dd></div>
+      </dl>
+    </div>
+
+    <form class="contact-form" id="contact-form" data-theme="light" novalidate>
+      <div class="k-field">
+        <label for="f-nome">Nome</label>
+        <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome" required>
+      </div>
+      <div class="k-field">
+        <label for="f-empresa">Empresa</label>
+        <input id="f-empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da empresa">
+      </div>
+      <div class="k-field full">
+        <label for="f-servico">O que você precisa?</label>
+        <select id="f-servico" name="servico">
+          <option>Site ou landing page</option>
+          <option>Automação de processos</option>
+          <option>Hub ou portal corporativo</option>
+          <option>Robô de atendimento (WhatsApp, Telegram, Instagram)</option>
+          <option>Ainda não sei, quero conversar</option>
+        </select>
+      </div>
+      <div class="k-field full">
+        <label for="f-msg">Mensagem</label>
+        <textarea id="f-msg" name="mensagem" placeholder="Ex.: recebemos 200 mensagens por dia no WhatsApp e queremos automatizar as dúvidas sobre pedidos." required></textarea>
+      </div>
+      <div class="form-foot">
+        <p class="form-note">Ao enviar, abrimos o WhatsApp com a sua mensagem preenchida. Nada é enviado sem a sua confirmação.</p>
+        <button class="k-btn k-btn-primary" type="submit">Enviar pelo WhatsApp</button>
+      </div>
+      <p class="form-result" id="form-result" role="status" hidden></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ RODAPÉ ============ -->
+<footer class="site-footer" data-theme="dark">
+  <div class="container footer-inner">
+    <img src="assets/img/kantrol-logo-branco.png" alt="Kantrol — Development &amp; Automation" width="904" height="270" loading="lazy">
+    <nav class="footer-links" aria-label="Rodapé">
+      <a href="#servicos">Serviços</a>
+      <a href="#robos">Robôs</a>
+      <a href="#arquitetura">Arquitetura</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <p class="footer-copy">© <span id="ano">2026</span> Kantrol · Desenvolvimento &amp; Automação. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+/* Kantrol — tokens (espelho de tokens.json do Design System)
+   Tema claro em :root; qualquer elemento com data-theme="dark" troca para o tema escuro. */
+:root, [data-theme="light"] {
+  /* Paleta da marca (fixa) */
+  --navy: #0b1b33;
+  --azul: #173e63;
+  --teal: #1e8c9e;
+  --aqua: #2ec4c9;
+  --nevoa: #e6ecf2;
+  --teal-ink: #16707f;
+
+  /* Semânticos */
+  --surface: #ffffff;
+  --surface-alt: #f3f6f9;
+  --surface-raised: #ffffff;
+  --ink: #0b1b33;
+  --ink-muted: #46586e;
+  --line: #dde4ec;
+  --accent: #16707f;
+  --primary: #173e63;
+  --primary-hover: #0b1b33;
+  --on-primary: #ffffff;
+  --focus: #1e8c9e;
+  --danger: #b42318;
+  --shadow-card: none;
+  color-scheme: light;
+}
+[data-theme="dark"] {
+  --surface: #0b1b33;
+  --surface-alt: #102544;
+  --surface-raised: #132b4c;
+  --ink: #f5f8fb;
+  --ink-muted: #a9b8cb;
+  --line: #27466f;
+  --accent: #2ec4c9;
+  --primary: #2ec4c9;
+  --primary-hover: #6bdadd;
+  --on-primary: #0b1b33;
+  --focus: #2ec4c9;
+  --danger: #ff8a7a;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4), 0 14px 36px rgba(0, 0, 0, 0.35);
+  color-scheme: dark;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --radius-sm: 2px;
+  --radius-md: 3px;
+  --radius-lg: 4px;
+  --radius-pill: 999px;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-sans: "Hanken Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-sans);
+}
