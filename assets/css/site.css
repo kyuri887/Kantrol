@@ -74,7 +74,9 @@ h1, h2, h3 { text-wrap: balance; }
 .services-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-6); margin-top: var(--space-12); }
 
 /* ---------- Robôs ---------- */
-.bots { background: var(--navy); color: var(--ink); }
+.bots { position: relative; background: var(--navy) url("../img/fundo-buraco-negro.jpg") center / cover no-repeat; color: var(--ink); }
+.bots::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,27,51,.68) 0%, rgba(11,27,51,.84) 100%); }
+.bots > .container { position: relative; }
 .bots-head { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: clamp(32px, 6vw, 96px); align-items: end; }
 .bots-head h2 { margin: 0; font: 400 clamp(32px, 4vw, 46px)/1.15 var(--font-display); letter-spacing: -0.015em; text-wrap: balance; max-width: 18ch; }
 .bots-head p { margin: 0; max-width: 34rem; font: 400 18px/1.6 var(--font-sans); color: var(--ink-muted); }
